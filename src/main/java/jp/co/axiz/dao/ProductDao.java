@@ -60,7 +60,7 @@ public class ProductDao {
     /**
      * 条件を指定した検索
      */
-    public List<Product> find(Product name) {
+    public List<Product> find(Product pd) {
         // WHERE句の文字列生成用
         // 指定した条件に応じて、
         // 「product_name = ?」、「price = ?」などの文字列が入る
@@ -74,9 +74,9 @@ public class ProductDao {
         Integer price = null;
 
         // 引数の値をセット
-        if (name != null) {
-            productName = name.getProductName();
-            price = name.getPrice();
+        if (pd != null) {
+            productName = pd.getProductName();
+            price = pd.getPrice();
         }
 
         // 各検索条件が全て未入力の場合、全件検索

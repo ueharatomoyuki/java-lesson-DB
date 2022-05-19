@@ -11,7 +11,7 @@
 </head>
 <body>
   <p>検索条件を入力して下さい  </p>
-  <form action="logindb" method="post">
+  <form action="logind" method="post">
     product_name <input type="text" name="name"><br>
     price <input type="text" name="price"><br>
     <button type="submit">検索</button>

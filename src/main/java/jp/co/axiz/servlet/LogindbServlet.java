@@ -13,7 +13,7 @@ import jp.co.axiz.entity.Product;
 import jp.co.axiz.service.ProductService;
 import jp.co.axiz.util.ParamUtil;
 
-@WebServlet("/logindb")
+@WebServlet("/logind")
 public class LogindbServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
@@ -30,8 +30,15 @@ public class LogindbServlet extends HttpServlet {
         	List<Product> list = ProductService.find();
             request.setAttribute("userList", list);
             // 次画面指定
-            request.getRequestDispatcher("searchRsult.jsp").forward(request, response);
+            request.getRequestDispatcher("searchResult.jsp").forward(request, response);
             return;
+        }else if(ParamUtil.isNullOrEmpty(name)) {
+        	
+        	
+        }else if(ParamUtil.isNullOrEmpty(price)) {
+        	
+        }else {
+        	
         }
 //        int Pid = Integer.parseInt(id) ;
 //        // ログインチェック
