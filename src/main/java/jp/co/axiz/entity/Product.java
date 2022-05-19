@@ -1,4 +1,4 @@
-package entity;
+package jp.co.axiz.entity;
 
 public class Product {
 	

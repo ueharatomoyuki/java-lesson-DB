@@ -1,4 +1,4 @@
-package servlet;
+package jp.co.axiz.servlet;
 
 import java.io.IOException;
 
@@ -8,9 +8,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import entity.Product;
-import service.ProductService;
-import util.ParamUtil;
+import jp.co.axiz.entity.Product;
+import jp.co.axiz.service.ProductService;
+import jp.co.axiz.util.ParamUtil;
 
 @WebServlet("/logindb")
 public class LogindbServlet extends HttpServlet {

@@ -10,12 +10,10 @@
 <title>Top</title>
 </head>
 <body>
-  <c:if test="${not empty msg}">
-    <p>${msg}</p>
-  </c:if>
   <p>検索条件を入力して下さい  </p>
   <form action="logindb" method="post">
-    product_id <input type="text" name="id"><br>
+    product_name <input type="text" name="id"><br>
+    price <input type="text" name="price"><br>
     <button type="submit">検索</button>
   </form>
 
